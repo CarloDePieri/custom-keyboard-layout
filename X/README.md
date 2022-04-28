@@ -24,9 +24,28 @@ xkb_symbols "cik" {
 };
 ```
 
+and to `/usr/share/X11/xkb/symbols/it`:
+
+```
+partial alphanumeric_keys
+xkb_symbols "cik" {
+    include "it(basic)"
+    name[Group1]= "Italian (cik)";
+
+    //hjkl
+    //AltGr + hjkl
+    key <AC06> {        [         h, H, Left            ]       };
+    key <AC07> {        [         j, J, Down            ]       };
+    key <AC08> {        [         k, K, Up              ]       };
+    key <AC09> {        [         l, L, Right           ]       };
+};
+```
+
 In .xinitrc / .xprofile add:
 
 ```
-setxkbmap us -v cik
+setxkbmap us,it -v cik,cik -option grp:alt_shift_toggle
 xmodmap ~/.Xmodmap
 ```
+
+This also allows to switch layout with Alt+Shift.
