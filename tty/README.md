@@ -25,5 +25,5 @@ top of the files for keycodes.
 
 ## SOURCES
 
-[arch wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration)
+[arch wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration) | 
 [man keymaps](https://man.archlinux.org/man/keymaps.5)
