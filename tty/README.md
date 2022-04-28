@@ -22,3 +22,8 @@ localectl set-keymap --no-convert /usr/local/share/kbd/keymaps/us_cik.map
 This is taken from the `/usr/share/kbd/keymaps/i386/qwerty/us.map.gz`.
 These are **NOT** X keycodes. Don't use `xev`. Look at the included maps at the
 top of the files for keycodes.
+
+## SOURCES
+
+[arch wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration)
+[man keymaps](https://man.archlinux.org/man/keymaps.5)
