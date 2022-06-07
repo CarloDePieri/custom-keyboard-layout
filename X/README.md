@@ -2,6 +2,8 @@ Copy this .Xmodmap file in your home:
 
 ```
 cp .Xmodmap ~/.
+# or link it:
+ln -s $(realpath .Xmodmap) ~/.
 ```
 
 Add the following section to `/usr/share/X11/xkb/symbols/us`:
@@ -44,7 +46,7 @@ xkb_symbols "cik" {
 In .xinitrc / .xprofile add:
 
 ```
-setxkbmap us,it -v cik,cik -option grp:alt_shift_toggle
+setxkbmap us,it -v cik,cik -option grp:ctrls_toggle
 xmodmap ~/.Xmodmap
 ```
 
